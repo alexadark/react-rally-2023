@@ -1,0 +1,156 @@
+{
+  "presets": [
+    {
+      "id": 1695660,
+      "name": "basic page",
+      "preset": {
+        "_uid": "7460b5fa-4416-4be1-a82f-c067e0a19790",
+        "body": [
+          {
+            "_uid": "7a751d0b-c414-4c7b-8e1a-c8ff69d98212",
+            "text": {
+              "type": "doc",
+              "content": [
+                {
+                  "type": "heading",
+                  "attrs": {
+                    "level": 1
+                  },
+                  "content": [
+                    {
+                      "text": "This is the home",
+                      "type": "text"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur.",
+                      "type": "text"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.",
+                      "type": "text"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph",
+                  "content": [
+                    {
+                      "text": "Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.",
+                      "type": "text"
+                    }
+                  ]
+                },
+                {
+                  "type": "paragraph"
+                }
+              ]
+            },
+            "component": "page-content"
+          }
+        ],
+        "component": "page"
+      },
+      "component_id": 3327017,
+      "space_id": 192330,
+      "created_at": "2023-01-25T10:58:43.260Z",
+      "updated_at": "2023-01-25T10:58:43.260Z",
+      "image": "",
+      "color": "",
+      "icon": "",
+      "description": ""
+    },
+    {
+      "id": 1695665,
+      "name": "Basic post",
+      "preset": {
+        "_uid": "48181370-7ba6-4626-8aef-0fb4e68b3cbf",
+        "text": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Nulla vitae elit libero, a pharetra augue. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Maecenas sed diam eget risus varius blandit sit amet non magna.",
+                  "type": "text"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "text": "Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nullam id dolor id nibh ultricies vehicula ut id elit. Etiam porta sem malesuada magna mollis euismod. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.",
+                  "type": "text"
+                }
+              ]
+            }
+          ]
+        },
+        "image": {
+          "id": 6952545,
+          "alt": "",
+          "name": "",
+          "focus": "",
+          "title": "",
+          "filename": "https://a.storyblok.com/f/192330/640x427/7b45e5ed1f/ilya-pavlov-oqtafyt5ktw-unsplash-1.jpg",
+          "copyright": "",
+          "fieldtype": "asset",
+          "is_external_url": false
+        },
+        "headline": "Why I love Remix",
+        "component": "post"
+      },
+      "component_id": 3327022,
+      "space_id": 192330,
+      "created_at": "2023-01-25T11:00:02.732Z",
+      "updated_at": "2023-01-25T11:00:02.732Z",
+      "image": "",
+      "color": "",
+      "icon": "",
+      "description": ""
+    },
+    {
+      "id": 1695661,
+      "name": "posts archive",
+      "preset": {
+        "_uid": "126c0a36-60a4-4c07-a3f2-5771a575bd11",
+        "body": [
+          {
+            "_uid": "119bf700-04e9-47a0-a722-05d810b418ef",
+            "headline": "All Posts from our blog",
+            "component": "all-posts"
+          }
+        ],
+        "component": "page"
+      },
+      "component_id": 3327017,
+      "space_id": 192330,
+      "created_at": "2023-01-25T10:59:29.233Z",
+      "updated_at": "2023-01-25T10:59:29.233Z",
+      "image": "",
+      "color": "",
+      "icon": "",
+      "description": ""
+    }
+  ]
+}
