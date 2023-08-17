@@ -53,11 +53,6 @@ export const loader: LoaderFunction = async (args: LoaderArgs) => {
   });
 };
 
-export const action: ActionFunction = async ({ request }: ActionArgs) => {
-  const body = await request.formData();
-  return redirect(`/search-results?query=${body.get("query")}`);
-};
-
 export const meta: V2_MetaFunction = () => {
   return [
     { charset: "utf-8" },
