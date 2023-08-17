@@ -9,12 +9,12 @@ import {
   useLoaderData,
 } from "@remix-run/react";
 import { storyblokInit, apiPlugin } from "@storyblok/react";
-import type { V2_MetaFunction } from "@remix-run/node";
 import type {
   ActionArgs,
   ActionFunction,
   LoaderArgs,
   LoaderFunction,
+  V2_MetaFunction,
 } from "@remix-run/node";
 
 import Page from "./components/Page";
