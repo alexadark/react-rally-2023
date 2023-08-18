@@ -20,7 +20,7 @@ const SearchForm: FC<SearchFormProps> = ({ setOpen, setOpenOverlay }) => {
   }, []);
 
   useEffect(() => {
-    if (navigation.state === "submitting") {
+    if (navigation.state !== "idle") {
       setOpenOverlay(true);
     } else {
       setOpenOverlay(false);
