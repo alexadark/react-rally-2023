@@ -1,4 +1,4 @@
-import { json, redirect } from "@remix-run/node";
+import { json } from "@remix-run/node";
 import {
   Links,
   LiveReload,
@@ -10,8 +10,6 @@ import {
 } from "@remix-run/react";
 import { storyblokInit, apiPlugin } from "@storyblok/react";
 import type {
-  ActionArgs,
-  ActionFunction,
   LoaderArgs,
   LoaderFunction,
   V2_MetaFunction,
@@ -51,11 +49,6 @@ export const loader: LoaderFunction = async (args: LoaderArgs) => {
       STORYBLOK_PREVIEW_TOKEN: process.env.STORYBLOK_PREVIEW_TOKEN,
     },
   });
-};
-
-export const action: ActionFunction = async ({ request }: ActionArgs) => {
-  const body = await request.formData();
-  return redirect(`/search-results?query=${body.get("query")}`);
 };
 
 export const meta: V2_MetaFunction = () => {
