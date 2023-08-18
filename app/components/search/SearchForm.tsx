@@ -12,23 +12,23 @@ interface SearchFormProps {
 
 const SearchForm: FC<SearchFormProps> = ({ setOpen, setOpenOverlay }) => {
   const inputRef = useRef<HTMLInputElement>(null);
-  const fetcher = useNavigation(); // You need to define the type for useFetcher and its return value
-  console.log("fetcher", fetcher);
+  const navigation = useNavigation(); // You need to define the type for useFetcher and its return value
+  console.log("navigation", navigation);
 
   useEffect(() => {
     inputRef.current?.focus();
   }, []);
 
   useEffect(() => {
-    if (fetcher.state === "submitting") {
+    if (navigation.state === "submitting") {
       setOpenOverlay(true);
     } else {
       setOpenOverlay(false);
     }
-    if (fetcher.state === "loading") {
+    if (navigation.state === "loading") {
       setOpen(false);
     }
-  }, [fetcher, setOpenOverlay, setOpen]);
+  }, [navigation, setOpenOverlay, setOpen]);
 
   return (
     <Form method="post" className="flex justify-between md:w-[90%] relative">
