@@ -1,6 +1,5 @@
 import { useEffect, useRef } from "react";
-import type { Dispatch, SetStateAction, FC } from "react";
-import { Form, useNavigation } from "@remix-run/react";
+import { Form } from "@remix-run/react";
 import clsx from "clsx";
 
 const SearchForm = () => {
@@ -27,7 +26,7 @@ const SearchForm = () => {
           "border-0 border-l-8 border-teal-200 focus:border-teal-600",
           "text-teal-100",
           "text-xl font-bold tracking-wide uppercase",
-          "focus:outline-none focus:ring-transparent  placeholder-teal-200",
+          "focus:outline-none focus:ring-transparent  placeholder-teal-200"
         )}
       />
     </Form>

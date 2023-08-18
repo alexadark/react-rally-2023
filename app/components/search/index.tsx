@@ -9,6 +9,8 @@ import { useNavigation } from "@remix-run/react";
 const Search = () => {
   const [open, setOpen] = useState(false);
   const navigation = useNavigation();
+  console.log("navigation", navigation);
+
   const isSearching =
     navigation.state !== "idle" &&
     navigation.location.pathname === "/search-results";
