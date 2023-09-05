@@ -31,10 +31,7 @@ const SearchForm: FC<SearchFormProps> = ({ setOpen, setOpenOverlay }) => {
   }, [navigation, setOpenOverlay, setOpen]);
 
   return (
-    <Form
-      action="search-results"
-      className="flex justify-between md:w-[90%] relative"
-    >
+    <Form method="post" className="flex justify-between md:w-[90%] relative">
       <input
         ref={inputRef}
         type="text"

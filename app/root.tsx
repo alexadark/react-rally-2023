@@ -1,4 +1,4 @@
-import { json } from "@remix-run/node";
+import { json, redirect } from "@remix-run/node";
 import {
   Links,
   LiveReload,
@@ -13,6 +13,8 @@ import type {
   LoaderArgs,
   LoaderFunction,
   V2_MetaFunction,
+  ActionArgs,
+  ActionFunction,
 } from "@remix-run/node";
 
 import Page from "./components/Page";
@@ -42,6 +44,11 @@ storyblokInit({
   use: [apiPlugin],
   components,
 });
+
+export const action: ActionFunction = async ({ request }: ActionArgs) => {
+  const body = await request.formData();
+  return redirect(`/search-results?query=${body.get("query")}`);
+};
 
 export const loader: LoaderFunction = async (args: LoaderArgs) => {
   return json({
