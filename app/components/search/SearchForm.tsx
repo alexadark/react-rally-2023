@@ -12,7 +12,7 @@ interface SearchFormProps {
 
 const SearchForm: FC<SearchFormProps> = ({ setOpen, setOpenOverlay }) => {
   const inputRef = useRef<HTMLInputElement>(null);
-  const navigation = useNavigation(); // You need to define the type for useFetcher and its return value
+  const navigation = useNavigation();
   console.log("navigation", navigation);
 
   useEffect(() => {
